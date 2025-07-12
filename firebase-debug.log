@@ -1,0 +1,163 @@
+[debug] [2025-07-12T06:31:06.140Z] ----------------------------------------------------------------------
+[debug] [2025-07-12T06:31:06.147Z] Command:       C:\nvm4w\nodejs\node.exe C:\nvm4w\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init apphosting
+[debug] [2025-07-12T06:31:06.147Z] CLI Version:   14.10.1
+[debug] [2025-07-12T06:31:06.148Z] Platform:      win32
+[debug] [2025-07-12T06:31:06.148Z] Node Version:  v20.19.3
+[debug] [2025-07-12T06:31:06.148Z] Time:          Sat Jul 12 2025 08:31:06 GMT+0200 (South Africa Standard Time)
+[debug] [2025-07-12T06:31:06.148Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-12T06:31:06.525Z] Object "/functions" in "firebase.json" has unknown property: {"additionalProperty":"schedules"}
+[debug] [2025-07-12T06:31:06.526Z] Field "/functions" in "firebase.json" is possibly invalid: must be array
+[debug] [2025-07-12T06:31:06.526Z] Field "/functions" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2025-07-12T06:31:06.534Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-12T06:31:06.534Z] > authorizing via signed-in user (alankowa541@gmail.com)
+[debug] [2025-07-12T06:31:06.538Z] Object "/functions" in "firebase.json" has unknown property: {"additionalProperty":"schedules"}
+[debug] [2025-07-12T06:31:06.539Z] Field "/functions" in "firebase.json" is possibly invalid: must be array
+[debug] [2025-07-12T06:31:06.539Z] Field "/functions" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\life9\OneDrive\Desktop
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-07-12T06:33:28.273Z] Using project from CLI flag: guided-botswana
+[debug] [2025-07-12T06:33:28.275Z] Checked if tokens are valid: false, expires at: 1752228222864
+[debug] [2025-07-12T06:33:28.275Z] Checked if tokens are valid: false, expires at: 1752228222864
+[debug] [2025-07-12T06:33:28.276Z] > refreshing access token with scopes: []
+[debug] [2025-07-12T06:33:28.278Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-07-12T06:33:28.278Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-12T06:33:29.511Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-07-12T06:33:29.511Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-12T06:33:29.548Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/guided-botswana [none]
+[debug] [2025-07-12T06:33:30.557Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/guided-botswana 200
+[debug] [2025-07-12T06:33:30.558Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/guided-botswana {"projectId":"guided-botswana","projectNumber":"488260239279","displayName":"Explore Botswana","name":"projects/guided-botswana","resources":{"hostingSite":"guided-botswana"},"state":"ACTIVE","etag":"1_669c6228-2774-4d3a-8fed-9083bfef143c"}
+[info] i  Using project guided-botswana (Explore Botswana) 
+[info] 
+=== App Hosting Setup
+[debug] [2025-07-12T06:33:30.572Z] Checked if tokens are valid: true, expires at: 1752305608511
+[debug] [2025-07-12T06:33:30.572Z] Checked if tokens are valid: true, expires at: 1752305608511
+[debug] [2025-07-12T06:33:30.572Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/guided-botswana/billingInfo [none]
+[debug] [2025-07-12T06:33:32.261Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/guided-botswana/billingInfo 200
+[debug] [2025-07-12T06:33:32.262Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/guided-botswana/billingInfo {"name":"projects/guided-botswana/billingInfo","projectId":"guided-botswana","billingAccountName":"billingAccounts/016612-24BF5A-FA8797","billingEnabled":true}
+[debug] [2025-07-12T06:33:32.267Z] Checked if tokens are valid: true, expires at: 1752305608511
+[debug] [2025-07-12T06:33:32.267Z] Checked if tokens are valid: true, expires at: 1752305608511
+[debug] [2025-07-12T06:33:32.267Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/guided-botswana/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-07-12T06:33:32.267Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/guided-botswana/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/guided-botswana
+[debug] [2025-07-12T06:33:34.703Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/guided-botswana/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-07-12T06:33:34.703Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/guided-botswana/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-07-12T06:33:34.749Z] Checked if tokens are valid: true, expires at: 1752305608511
+[debug] [2025-07-12T06:33:34.749Z] Checked if tokens are valid: true, expires at: 1752305608511
+[debug] [2025-07-12T06:33:34.750Z] Checked if tokens are valid: true, expires at: 1752305608511
+[debug] [2025-07-12T06:33:34.750Z] Checked if tokens are valid: true, expires at: 1752305608511
+[debug] [2025-07-12T06:33:34.751Z] Checked if tokens are valid: true, expires at: 1752305608511
+[debug] [2025-07-12T06:33:34.751Z] Checked if tokens are valid: true, expires at: 1752305608511
+[debug] [2025-07-12T06:33:34.751Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/guided-botswana/services/developerconnect.googleapis.com [none]
+[debug] [2025-07-12T06:33:34.751Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/guided-botswana/services/developerconnect.googleapis.com x-goog-quota-user=projects/guided-botswana
+[debug] [2025-07-12T06:33:34.752Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/guided-botswana/services/run.googleapis.com [none]
+[debug] [2025-07-12T06:33:34.752Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/guided-botswana/services/run.googleapis.com x-goog-quota-user=projects/guided-botswana
+[debug] [2025-07-12T06:33:34.755Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/guided-botswana/services/iam.googleapis.com [none]
+[debug] [2025-07-12T06:33:34.755Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/guided-botswana/services/iam.googleapis.com x-goog-quota-user=projects/guided-botswana
+[debug] [2025-07-12T06:33:36.612Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/guided-botswana/services/developerconnect.googleapis.com 200
+[debug] [2025-07-12T06:33:36.613Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/guided-botswana/services/developerconnect.googleapis.com [omitted]
+[debug] [2025-07-12T06:33:36.737Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/guided-botswana/services/iam.googleapis.com 200
+[debug] [2025-07-12T06:33:36.737Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/guided-botswana/services/iam.googleapis.com [omitted]
+[debug] [2025-07-12T06:33:36.755Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/guided-botswana/services/run.googleapis.com 200
+[debug] [2025-07-12T06:33:36.756Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/guided-botswana/services/run.googleapis.com [omitted]
+[debug] [2025-07-12T06:33:36.772Z] Checked if tokens are valid: true, expires at: 1752305608511
+[debug] [2025-07-12T06:33:36.772Z] Checked if tokens are valid: true, expires at: 1752305608511
+[debug] [2025-07-12T06:33:36.772Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/guided-botswana/serviceAccounts/firebase-app-hosting-compute@guided-botswana.iam.gserviceaccount.com:testIamPermissions [none]
+[debug] [2025-07-12T06:33:36.772Z] >>> [apiv2][(partial)header] POST https://iam.googleapis.com/v1/projects/guided-botswana/serviceAccounts/firebase-app-hosting-compute@guided-botswana.iam.gserviceaccount.com:testIamPermissions x-goog-quota-user=projects/guided-botswana
+[debug] [2025-07-12T06:33:36.772Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/guided-botswana/serviceAccounts/firebase-app-hosting-compute@guided-botswana.iam.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-07-12T06:33:38.756Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/guided-botswana/serviceAccounts/firebase-app-hosting-compute@guided-botswana.iam.gserviceaccount.com:testIamPermissions 200
+[debug] [2025-07-12T06:33:38.756Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/guided-botswana/serviceAccounts/firebase-app-hosting-compute@guided-botswana.iam.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-07-12T06:33:38.757Z] Checked if tokens are valid: true, expires at: 1752305608511
+[debug] [2025-07-12T06:33:38.757Z] Checked if tokens are valid: true, expires at: 1752305608511
+[debug] [2025-07-12T06:33:38.757Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/guided-botswana/serviceAccounts [none]
+[debug] [2025-07-12T06:33:38.757Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/guided-botswana/serviceAccounts {"accountId":"firebase-app-hosting-compute","serviceAccount":{"displayName":"Firebase App Hosting compute service account","description":"Default service account used to run builds and deploys for Firebase App Hosting"}}
+[debug] [2025-07-12T06:33:40.531Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/guided-botswana/serviceAccounts 409
+[debug] [2025-07-12T06:33:40.531Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/guided-botswana/serviceAccounts [omitted]
+[debug] [2025-07-12T06:33:40.532Z] Checked if tokens are valid: true, expires at: 1752305608511
+[debug] [2025-07-12T06:33:40.532Z] Checked if tokens are valid: true, expires at: 1752305608511
+[debug] [2025-07-12T06:33:40.532Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/guided-botswana:getIamPolicy [none]
+[debug] [2025-07-12T06:33:42.666Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/guided-botswana:getIamPolicy 200
+[debug] [2025-07-12T06:33:42.667Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/guided-botswana:getIamPolicy {"version":1,"etag":"BwY5MrZBlbU=","bindings":[{"role":"roles/artifactregistry.serviceAgent","members":["serviceAccount:service-488260239279@gcp-sa-artifactregistry.iam.gserviceaccount.com"]},{"role":"roles/cloudbuild.builds.builder","members":["serviceAccount:488260239279-compute@developer.gserviceaccount.com","serviceAccount:488260239279@cloudbuild.gserviceaccount.com"]},{"role":"roles/cloudbuild.builds.editor","members":["serviceAccount:488260239279-compute@developer.gserviceaccount.com"]},{"role":"roles/cloudbuild.serviceAgent","members":["serviceAccount:service-488260239279@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-488260239279@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/cloudscheduler.serviceAgent","members":["serviceAccount:service-488260239279@gcp-sa-cloudscheduler.iam.gserviceaccount.com"]},{"role":"roles/containerregistry.ServiceAgent","members":["serviceAccount:service-488260239279@containerregistry.iam.gserviceaccount.com"]},{"role":"roles/datastore.user","members":["serviceAccount:488260239279-compute@developer.gserviceaccount.com"]},{"role":"roles/developerconnect.readTokenAccessor","members":["serviceAccount:488260239279-compute@developer.gserviceaccount.com","serviceAccount:firebase-app-hosting-compute@guided-botswana.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.serviceAgent","members":["serviceAccount:service-488260239279@gcp-sa-devconnect.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.tokenAccessor","members":["serviceAccount:service-488260239279@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:488260239279@cloudservices.gserviceaccount.com","serviceAccount:guided-botswana@appspot.gserviceaccount.com"]},{"role":"roles/eventarc.serviceAgent","members":["serviceAccount:service-488260239279@gcp-sa-eventarc.iam.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-488260239279@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@guided-botswana.iam.gserviceaccount.com","serviceAccount:firebase-app-hosting-compute@guided-botswana.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.computeRunner","members":["serviceAccount:firebase-app-hosting-compute@guided-botswana.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.serviceAgent","members":["serviceAccount:service-488260239279@gcp-sa-firebaseapphosting.iam.gserviceaccount.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:firebase-adminsdk-fbsvc@guided-botswana.iam.gserviceaccount.com"]},{"role":"roles/firebasemods.serviceAgent","members":["serviceAccount:service-488260239279@gcp-sa-firebasemods.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-488260239279@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/firebasestorage.serviceAgent","members":["serviceAccount:service-488260239279@gcp-sa-firebasestorage.iam.gserviceaccount.com"]},{"role":"roles/firestore.serviceAgent","members":["serviceAccount:service-488260239279@gcp-sa-firestore.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@guided-botswana.iam.gserviceaccount.com","serviceAccount:service-488260239279@gcp-sa-pubsub.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountUser","members":["serviceAccount:488260239279-compute@developer.gserviceaccount.com"]},{"role":"roles/logging.logWriter","members":["serviceAccount:488260239279-compute@developer.gserviceaccount.com"]},{"role":"roles/owner","members":["user:alankowa541@gmail.com"]},{"role":"roles/run.admin","members":["serviceAccount:488260239279-compute@developer.gserviceaccount.com"]},{"role":"roles/run.invoker","members":["serviceAccount:488260239279-compute@developer.gserviceaccount.com"]},{"role":"roles/run.serviceAgent","members":["serviceAccount:service-488260239279@serverless-robot-prod.iam.gserviceaccount.com"]},{"role":"roles/secretmanager.admin_withcond_3fa4c9a1eda020a18111","members":["serviceAccount:service-488260239279@gcp-sa-devconnect.iam.gserviceaccount.com"]},{"role":"roles/storage.admin","members":["serviceAccount:firebase-adminsdk-fbsvc@guided-botswana.iam.gserviceaccount.com"]}]}
+[debug] [2025-07-12T06:33:42.667Z] Checked if tokens are valid: true, expires at: 1752305608511
+[debug] [2025-07-12T06:33:42.667Z] Checked if tokens are valid: true, expires at: 1752305608511
+[debug] [2025-07-12T06:33:42.668Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/guided-botswana:setIamPolicy [none]
+[debug] [2025-07-12T06:33:42.668Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/guided-botswana:setIamPolicy {"policy":{"version":1,"etag":"BwY5MrZBlbU=","bindings":[{"role":"roles/artifactregistry.serviceAgent","members":["serviceAccount:service-488260239279@gcp-sa-artifactregistry.iam.gserviceaccount.com"]},{"role":"roles/cloudbuild.builds.builder","members":["serviceAccount:488260239279-compute@developer.gserviceaccount.com","serviceAccount:488260239279@cloudbuild.gserviceaccount.com"]},{"role":"roles/cloudbuild.builds.editor","members":["serviceAccount:488260239279-compute@developer.gserviceaccount.com"]},{"role":"roles/cloudbuild.serviceAgent","members":["serviceAccount:service-488260239279@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-488260239279@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/cloudscheduler.serviceAgent","members":["serviceAccount:service-488260239279@gcp-sa-cloudscheduler.iam.gserviceaccount.com"]},{"role":"roles/containerregistry.ServiceAgent","members":["serviceAccount:service-488260239279@containerregistry.iam.gserviceaccount.com"]},{"role":"roles/datastore.user","members":["serviceAccount:488260239279-compute@developer.gserviceaccount.com"]},{"role":"roles/developerconnect.readTokenAccessor","members":["serviceAccount:488260239279-compute@developer.gserviceaccount.com","serviceAccount:firebase-app-hosting-compute@guided-botswana.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.serviceAgent","members":["serviceAccount:service-488260239279@gcp-sa-devconnect.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.tokenAccessor","members":["serviceAccount:service-488260239279@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:488260239279@cloudservices.gserviceaccount.com","serviceAccount:guided-botswana@appspot.gserviceaccount.com"]},{"role":"roles/eventarc.serviceAgent","members":["serviceAccount:service-488260239279@gcp-sa-eventarc.iam.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-488260239279@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@guided-botswana.iam.gserviceaccount.com","serviceAccount:firebase-app-hosting-compute@guided-botswana.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.computeRunner","members":["serviceAccount:firebase-app-hosting-compute@guided-botswana.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.serviceAgent","members":["serviceAccount:service-488260239279@gcp-sa-firebaseapphosting.iam.gserviceaccount.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:firebase-adminsdk-fbsvc@guided-botswana.iam.gserviceaccount.com"]},{"role":"roles/firebasemods.serviceAgent","members":["serviceAccount:service-488260239279@gcp-sa-firebasemods.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-488260239279@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/firebasestorage.serviceAgent","members":["serviceAccount:service-488260239279@gcp-sa-firebasestorage.iam.gserviceaccount.com"]},{"role":"roles/firestore.serviceAgent","members":["serviceAccount:service-488260239279@gcp-sa-firestore.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@guided-botswana.iam.gserviceaccount.com","serviceAccount:service-488260239279@gcp-sa-pubsub.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountUser","members":["serviceAccount:488260239279-compute@developer.gserviceaccount.com"]},{"role":"roles/logging.logWriter","members":["serviceAccount:488260239279-compute@developer.gserviceaccount.com"]},{"role":"roles/owner","members":["user:alankowa541@gmail.com"]},{"role":"roles/run.admin","members":["serviceAccount:488260239279-compute@developer.gserviceaccount.com"]},{"role":"roles/run.invoker","members":["serviceAccount:488260239279-compute@developer.gserviceaccount.com"]},{"role":"roles/run.serviceAgent","members":["serviceAccount:service-488260239279@serverless-robot-prod.iam.gserviceaccount.com"]},{"role":"roles/secretmanager.admin_withcond_3fa4c9a1eda020a18111","members":["serviceAccount:service-488260239279@gcp-sa-devconnect.iam.gserviceaccount.com"]},{"role":"roles/storage.admin","members":["serviceAccount:firebase-adminsdk-fbsvc@guided-botswana.iam.gserviceaccount.com"]},{"role":"roles/storage.objectViewer","members":["serviceAccount:firebase-app-hosting-compute@guided-botswana.iam.gserviceaccount.com"]}]},"updateMask":"bindings"}
+[debug] [2025-07-12T06:33:44.654Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/guided-botswana:setIamPolicy 200
+[debug] [2025-07-12T06:33:44.654Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/guided-botswana:setIamPolicy {"version":1,"etag":"BwY5tZubjHM=","bindings":[{"role":"roles/artifactregistry.serviceAgent","members":["serviceAccount:service-488260239279@gcp-sa-artifactregistry.iam.gserviceaccount.com"]},{"role":"roles/cloudbuild.builds.builder","members":["serviceAccount:488260239279-compute@developer.gserviceaccount.com","serviceAccount:488260239279@cloudbuild.gserviceaccount.com"]},{"role":"roles/cloudbuild.builds.editor","members":["serviceAccount:488260239279-compute@developer.gserviceaccount.com"]},{"role":"roles/cloudbuild.serviceAgent","members":["serviceAccount:service-488260239279@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-488260239279@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/cloudscheduler.serviceAgent","members":["serviceAccount:service-488260239279@gcp-sa-cloudscheduler.iam.gserviceaccount.com"]},{"role":"roles/containerregistry.ServiceAgent","members":["serviceAccount:service-488260239279@containerregistry.iam.gserviceaccount.com"]},{"role":"roles/datastore.user","members":["serviceAccount:488260239279-compute@developer.gserviceaccount.com"]},{"role":"roles/developerconnect.readTokenAccessor","members":["serviceAccount:488260239279-compute@developer.gserviceaccount.com","serviceAccount:firebase-app-hosting-compute@guided-botswana.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.serviceAgent","members":["serviceAccount:service-488260239279@gcp-sa-devconnect.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.tokenAccessor","members":["serviceAccount:service-488260239279@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:488260239279@cloudservices.gserviceaccount.com","serviceAccount:guided-botswana@appspot.gserviceaccount.com"]},{"role":"roles/eventarc.serviceAgent","members":["serviceAccount:service-488260239279@gcp-sa-eventarc.iam.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-488260239279@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@guided-botswana.iam.gserviceaccount.com","serviceAccount:firebase-app-hosting-compute@guided-botswana.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.computeRunner","members":["serviceAccount:firebase-app-hosting-compute@guided-botswana.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.serviceAgent","members":["serviceAccount:service-488260239279@gcp-sa-firebaseapphosting.iam.gserviceaccount.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:firebase-adminsdk-fbsvc@guided-botswana.iam.gserviceaccount.com"]},{"role":"roles/firebasemods.serviceAgent","members":["serviceAccount:service-488260239279@gcp-sa-firebasemods.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-488260239279@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/firebasestorage.serviceAgent","members":["serviceAccount:service-488260239279@gcp-sa-firebasestorage.iam.gserviceaccount.com"]},{"role":"roles/firestore.serviceAgent","members":["serviceAccount:service-488260239279@gcp-sa-firestore.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@guided-botswana.iam.gserviceaccount.com","serviceAccount:service-488260239279@gcp-sa-pubsub.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountUser","members":["serviceAccount:488260239279-compute@developer.gserviceaccount.com"]},{"role":"roles/logging.logWriter","members":["serviceAccount:488260239279-compute@developer.gserviceaccount.com"]},{"role":"roles/owner","members":["user:alankowa541@gmail.com"]},{"role":"roles/run.admin","members":["serviceAccount:488260239279-compute@developer.gserviceaccount.com"]},{"role":"roles/run.invoker","members":["serviceAccount:488260239279-compute@developer.gserviceaccount.com"]},{"role":"roles/run.serviceAgent","members":["serviceAccount:service-488260239279@serverless-robot-prod.iam.gserviceaccount.com"]},{"role":"roles/secretmanager.admin_withcond_3fa4c9a1eda020a18111","members":["serviceAccount:service-488260239279@gcp-sa-devconnect.iam.gserviceaccount.com"]},{"role":"roles/storage.admin","members":["serviceAccount:firebase-adminsdk-fbsvc@guided-botswana.iam.gserviceaccount.com"]},{"role":"roles/storage.objectViewer","members":["serviceAccount:firebase-app-hosting-compute@guided-botswana.iam.gserviceaccount.com"]}]}
+[info] i  This command links your local project to Firebase App Hosting. You will be able to deploy your web app with `firebase deploy` after setup. 
+[debug] [2025-07-12T06:36:12.366Z] ExitPromptError: User force closed the prompt with SIGINT
+    at Interface.sigint (C:\Users\life9\AppData\Local\nvm\v20.19.3\node_modules\firebase-tools\node_modules\@inquirer\core\dist\commonjs\lib\create-prompt.js:101:37)
+    at Interface.emit (node:events:524:28)
+    at Interface.emit (node:domain:489:12)
+    at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1125:18)
+    at ReadStream.onkeypress (node:internal/readline/interface:264:20)
+    at ReadStream.emit (node:events:536:35)
+    at ReadStream.emit (node:domain:489:12)
+    at emitKeys (node:internal/readline/utils:371:14)
+    at emitKeys.next (<anonymous>)
+    at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-07-12T06:36:34.276Z] ----------------------------------------------------------------------
+[debug] [2025-07-12T06:36:34.282Z] Command:       C:\nvm4w\nodejs\node.exe C:\nvm4w\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init apphosting
+[debug] [2025-07-12T06:36:34.282Z] CLI Version:   14.10.1
+[debug] [2025-07-12T06:36:34.283Z] Platform:      win32
+[debug] [2025-07-12T06:36:34.283Z] Node Version:  v20.19.3
+[debug] [2025-07-12T06:36:34.284Z] Time:          Sat Jul 12 2025 08:36:34 GMT+0200 (South Africa Standard Time)
+[debug] [2025-07-12T06:36:34.285Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-12T06:36:34.745Z] Object "/functions" in "firebase.json" has unknown property: {"additionalProperty":"schedules"}
+[debug] [2025-07-12T06:36:34.746Z] Field "/functions" in "firebase.json" is possibly invalid: must be array
+[debug] [2025-07-12T06:36:34.746Z] Field "/functions" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2025-07-12T06:36:34.760Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-12T06:36:34.761Z] > authorizing via signed-in user (alankowa541@gmail.com)
+[debug] [2025-07-12T06:36:34.762Z] Object "/functions" in "firebase.json" has unknown property: {"additionalProperty":"schedules"}
+[debug] [2025-07-12T06:36:34.763Z] Field "/functions" in "firebase.json" is possibly invalid: must be array
+[debug] [2025-07-12T06:36:34.763Z] Field "/functions" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\life9\OneDrive\Desktop
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2025-07-12T06:38:18.111Z] ExitPromptError: User force closed the prompt with SIGINT
+    at Interface.sigint (C:\Users\life9\AppData\Local\nvm\v20.19.3\node_modules\firebase-tools\node_modules\@inquirer\core\dist\commonjs\lib\create-prompt.js:101:37)
+    at Interface.emit (node:events:524:28)
+    at Interface.emit (node:domain:489:12)
+    at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1125:18)
+    at ReadStream.onkeypress (node:internal/readline/interface:264:20)
+    at ReadStream.emit (node:events:536:35)
+    at ReadStream.emit (node:domain:489:12)
+    at emitKeys (node:internal/readline/utils:371:14)
+    at emitKeys.next (<anonymous>)
+    at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
+[error] 
+[error] Error: An unexpected error has occurred.
